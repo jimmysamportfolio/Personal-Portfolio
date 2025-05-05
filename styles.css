@@ -1,0 +1,160 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Variables */
+:root {
+    --primary-color: #030436;
+    --primary-hover: #03045e;
+    --text-white: white;
+    --bg-light: #fafaff;
+    --text-gray: rgb(187, 187, 187);
+    --font-primary: "Inter", sans-serif;
+}
+
+/* Navigation */
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 8vh;
+    background-color: var(--primary-color);
+    padding: 0 10rem;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-list > ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    margin: 0 2rem 0 0;
+}
+
+.nav-item > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-white);
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: var(--font-primary);
+}
+
+.nav-title {
+    margin-right: auto;
+    display: flex;
+    gap: 2rem;
+    color: var(--text-white);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: var(--bg-light);
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: var(--font-primary);
+}
+
+.header > h1 {
+    margin-bottom: 1rem;
+}
+
+.header > h1 > span {
+    color: var(--primary-hover);
+    text-shadow: 0 0 28px #4d67a2;
+}
+
+.header > p {
+    font-weight: 500;
+}
+
+/* Images */
+.headshot-photo {
+    height: 6vh;
+    width: 6vh;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.lg {
+    height: 40vh;
+    width: 40vh;
+    border: black solid 5px;
+    margin-bottom: 2rem;
+}
+
+.lg:hover {
+    border: var(--primary-hover) solid 5px;
+}
+
+/* Sections */
+#projects-back {
+    background-color: rgb(8, 6, 66);
+    height: 110vh;
+}
+
+#about-back {
+    height: 90vh;
+    background-color: white;
+}
+
+#contact-back {
+    background-color: white;
+    height: 70vh;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+/* Common components */
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 5rem;
+}
+
+.iheader {
+    color: black;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: var(--font-primary);
+}
+
+.project {
+    color: var(--text-white);
+}
+
+/* Contact section */
+.contact-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.isubheaderchild {
+    font-size: 1.5rem;
+}
+
+.isubheaderchild > a,
+.isubheaderchild > h3 {
+    text-decoration: none;
+    color: var(--text-gray);
+}
